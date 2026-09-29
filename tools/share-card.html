@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Share card</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,500&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; }
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: #f6f5f0;
+    color: #191a17;
+    font-family: "Inter", sans-serif;
+  }
+  .card {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 84px 96px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 14px;
+    background: #1c6b58;
+  }
+  .eyebrow {
+    font: 500 22px/1 "JetBrains Mono", monospace;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: #6c6b63;
+  }
+  h1 {
+    margin: 28px 0 0;
+    font: 500 116px/1 "Newsreader", serif;
+    letter-spacing: -.025em;
+  }
+  p {
+    max-width: 900px;
+    margin: 30px 0 0;
+    font: 400 34px/1.4 "Newsreader", serif;
+    color: #3b3c37;
+  }
+  .foot {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font: 400 24px/1 "JetBrains Mono", monospace;
+    color: #6c6b63;
+  }
+  .foot b { font-weight: 500; color: #1c6b58; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="eyebrow">Senior Software Engineer · London</div>
+    <h1>Rodion Butkevich</h1>
+    <p>Ten years building financial systems in Go and Java, from Barclays and Deutsche Bank to CoinShares and Coinbase.</p>
+    <div class="foot"><b>iamrodion.com</b><span>Go · Java · Kafka · Kubernetes</span></div>
+  </div>
+</body>
+</html>
